@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Header */
+header{
+    background-color: rgb(14, 185, 14);
+    padding: 10px;;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    flex-wrap: wrap;
+}
+
+.header__icono {
+    height: 64px;
+    width: 64px;
+    display: inline;
+}
+
+.header__lista{
+    list-style: none;
+    display: inline;
+}
+
+.header__item{
+    display: inline;
+    padding: 25px;
+}
+
+.header__item a{
+    border-style: dashed;
+    border-radius: 5px;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* MAIN */
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+
+.section__index{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    background-color: rgb(14, 185, 14);
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    background-color: rgb(17, 211, 17);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 0px 0px 20px;
+}
+
+body{
+    background-color: rgb(145, 145, 145);
+}
+
+.body__img{
+    width: 500px;
+    background-color: rgb(14, 185, 14);
+    padding: 10px;
+    display: inline;
+}
+/* --Grid en index-- */
+.grid__container{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    display: grid;
+    background-color: rgb(14, 185, 14);
+    grid-template-columns: auto 290px 220px;
+    grid-template-rows: 220px 510px 340px;
+    grid-template-areas:"text item1 item2"
+                        "text item3 item3"
+                        "text item4 item4" ;
+}
+.grid__container div{
+    margin: 2px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(14, 185, 14);
+}
+
+.item__texto{
+    padding: 30px;
+    grid-area: text;
+    font-size: 60px;
+    grid-row: 1 / 4;
+    text-align: left;
+}
+
+.item1{
+    grid-area: item1;
+    background-image: url(../resources/hotas1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 2 / 3;
+}
+
+.item2{
+    grid-area: item2;
+    background-image: url(../resources/hotas2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 3 / 4;
+}
+
+
+.item3{
+    grid-area: item3;
+    background-image: url(../resources/hotas3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 2 / 4;
+}
+
+.item4{
+    grid-area: item4;
+    background-image: url(../resources/hotas4.jpg);
+    background-repeat: no-repeat;
+    background-size: 505px auto;
+    background-position: center;
+    grid-column: 2 / 4;
+}
+
+/* --Grid en contactos-- */
+
+/* container */
+.grid__container--contactos{
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    background-color: rgb(14, 185, 14);
+    grid-template-columns: 400px 110px;
+    grid-template-rows: repeat(4, 110px);
+    grid-template-areas: "wsptxt img1"
+                         "fbtxt img2"
+                         "igtxt img3"
+                         "ldtxt img4";
+}
+
+/* cajas */
+
+.grid__container--contactos div{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(14, 185, 14);
+}
+
+/* imgagenes */
+
+.img1{
+    grid-area: img1;
+    background-image: url(../resources/whatsapp.png) ;
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    grid-area: img2;
+    background-image: url(../resources/facebook.png) ;
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+    grid-area: img3;
+    background-image: url(../resources/instagram.png) ;
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img4{
+    grid-area: img4;
+    background-image: url(../resources/linkedin.png) ;
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* textos */
+
+.txt1{
+    padding: 30px;
+    grid-area: wsptxt;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.txt2{
+    grid-area: fbtxt;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.txt3{
+    grid-area: igtxt;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.txt4{
+    grid-area: ldtxt;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* clases para la pagina contactos */
+
+.img__contacto{
+    width: 40px;
+    padding: 2px;
+}
+
+.lista__contacto--img{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    background-color:rgb(17, 211, 17) ;
+}
+
+.lista__contacto--txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgb(17, 211, 17);
+}
+
+.item__contacto{
+    padding: 0px 0px 0px 20px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(17, 211, 17);
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    background-color: rgb(14, 185, 14);
+    padding: 10px;
+}
+
+.footer__lista{
+    display: flex;
+    align-items: center;
+}
+
+.footer__item{
+    display: flex;
+    display: inline;
+}
+
+.footer__img{
+    margin: 2px;
+    width: 40px;
+}
+
+
+/* medida celular */
+@media (min-width: 320px) and (max-width: 575px){
+
+}
