@@ -48,13 +48,8 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-} 
-
-.section__index{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-}
+}  
 
 article{
     width: fit-content;
@@ -110,6 +105,11 @@ body{
     border: 2px solid rgb(14, 185, 14);
 }
 
+.grid__container div:hover{
+    transform: scale(1.4);
+    transition: 0.20s;
+}
+
 .item__texto{
     padding: 20px;
     grid-area: text;
@@ -135,7 +135,6 @@ body{
     background-position: center;
     grid-column: 3 / 4;
 }
-
 
 .item3{
     grid-area: item3;
@@ -225,12 +224,22 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.txt1:hover{
+    transform: scale(1.4);
+    transition: 0.20s;
+}
+
 .txt2{
     grid-area: fbtxt;
     padding: 30px;
     font-size: 40px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.txt2:hover{
+    transform: scale(1.4);
+    transition: 0.20s;
 }
 
 .txt3{
@@ -241,12 +250,22 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.txt3:hover{
+    transform: scale(1.4);
+    transition: 0.20s;
+}
+
 .txt4{
     grid-area: ldtxt;
     padding: 30px;
     font-size: 40px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.txt4:hover{
+    transform: scale(1.4);
+    transition: 0.20s;
 }
 
 /* clases para la pagina contactos */
@@ -290,6 +309,11 @@ body{
     margin: 10px;
     padding: 10px;
     background-color: rgb(14, 185, 14);
+}
+
+.img__sn:hover{
+    transform: scale(1.1);
+    transition: 0.20s;
 }
 
 .video__productos{
@@ -409,11 +433,6 @@ footer{
         justify-content: center;
     }
 
-    /* index */
-    .section__index{
-        justify-content: left;
-    }
-
     /* --Grid en index-- */
     .grid__container{
         width: fit-content;
@@ -522,6 +541,7 @@ footer{
     }
 
      /* --Grid en index-- */
+    
     .grid__container{
         width: fit-content;
         margin: 15px;
