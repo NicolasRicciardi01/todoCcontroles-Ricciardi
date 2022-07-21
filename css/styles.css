@@ -369,6 +369,11 @@ footer{
     font-size: 20px;
 }
 
+/* carrusel */
+
+.carrusel{
+    width: 40%;
+}
 
 /* medida celular */
 @media (min-width: 320px) and (max-width: 575px){
@@ -514,6 +519,12 @@ footer{
         align-items: center;
     }
 
+    /* bootstrap */
+
+    .carrusel{
+        width: 75%;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 1200px){
@@ -622,6 +633,12 @@ footer{
     footer{
         justify-content:space-around;
         align-items: center;
+    }
+
+    /* bootstrap */
+
+    .carrusel{
+        width: 75%;
     }
 
 }
