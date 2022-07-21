@@ -359,6 +359,15 @@ footer{
     margin: 2px;
     width: 40px;
 }
+/* Bootstrap */
+
+.navbar{
+    background-color: rgb(14, 185, 14);
+}
+
+.nav-item{
+    font-size: 20px;
+}
 
 
 /* medida celular */
