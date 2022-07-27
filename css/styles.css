@@ -284,6 +284,11 @@ body {
 .carrusel {
   width: 30%; }
 
+.carrusel img {
+  width: auto;
+  height: 300px;
+  max-height: 300px; }
+
 /* medida celular */
 @media (min-width: 320px) and (max-width: 575px) {
   /* header/nav */
