@@ -1,0 +1,471 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import "footer";
+@import "grids";
+/* MAIN */
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+
+article{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(14, 185, 14);
+    padding: 5px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    border-radius: 10px;
+    background-color: rgb(17, 211, 17);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 0px 0px 20px;
+}
+
+body{
+    background-color: rgb(145, 145, 145);
+}
+
+.body__img{
+    width: 500px;
+    background-color: rgb(14, 185, 14);
+    padding: 10px;
+    display: inline;
+}
+/* --Grid en index-- */
+.grid__container{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    display: grid;
+    background-color: rgb(14, 185, 14);
+    grid-template-columns: 300px 200px 200px;
+    grid-template-rows: 220px 420px 340px;
+    grid-template-areas:"text item1 item2"
+                        "text item3 item3"
+                        "text item4 item4" ;
+}
+.grid__container div{
+    margin: 2px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(14, 185, 14);
+}
+
+.grid__container div:hover{
+    transform: scale(1.2);
+    transition: 0.20s;
+}
+
+/* --Grid en contactos-- */
+
+.grid__container--contactos{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    background-color: rgb(14, 185, 14);
+    grid-template-columns: 400px 110px;
+    grid-template-rows: repeat(4, 110px);
+    grid-template-areas: "wsptxt img1"
+                         "fbtxt img2"
+                         "igtxt img3"
+                         "ldtxt img4";
+}
+
+.grid__container--contactos div{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(14, 185, 14);
+}
+
+
+/* clases para la pagina contactos */
+
+.img__contacto{
+    width: 40px;
+    padding: 2px;
+}
+
+.lista__contacto--img{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    background-color:rgb(17, 211, 17) ;
+}
+
+.lista__contacto--txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgb(17, 211, 17);
+}
+
+.item__contacto{
+    padding: 0px 0px 0px 20px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(17, 211, 17);
+}
+
+.article__conocenos{
+    display: flex;
+    justify-content: center;
+    font-size: 2.1em;
+    margin: 10px;
+}
+
+/* productos */
+
+.img__sn{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(14, 185, 14);
+}
+
+.img__sn:hover{
+    transform: scale(1.1);
+    transition: 0.20s;
+}
+
+.video__productos{
+    border-radius: 5px;
+    background-color: rgb(14, 185, 14);
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+}
+
+/* ubicanos/encuentranos */
+
+.mapa{
+    border-radius: 5px;
+    background-color: rgb(14, 185, 14);
+    margin: 8px;
+    padding: 5px;
+}
+
+
+/* Bootstrap */
+
+.navbar{
+    background-color: rgb(14, 185, 14);
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+/* carrusel */
+
+.carrusel{
+    width: 30%;
+}
+
+/* medida celular */
+@media (min-width: 320px) and (max-width: 575px){
+
+    /* header/nav */
+
+    header{
+        position: static;
+        padding: 0px;
+    }
+
+    .header__icono{
+        width: 50px;
+        padding: 5px;
+    }
+
+    .header__item{
+        padding: 0px;
+    }
+
+    .header__item a{
+        border-radius: 5px;
+        font-size: 30px;
+    }
+
+    nav{
+        justify-content: space-around;
+    }
+
+    .header__lista{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+
+    /*--Grid en contactos  */
+
+    .grid__container--contactos{    
+        margin: 12px;
+        padding: 5px;
+        grid-template-columns: 175px 110px;
+        grid-template-rows: repeat(4, 110px);
+    }
+
+    .txt1{
+        font-size: 19px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .txt2{
+        font-size: 17px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .txt3{
+        font-size: 18px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .txt4{
+        font-size: 19px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* --Grid en index-- */
+    .grid__container{
+        width: fit-content;
+        margin: 15px;
+        padding: 5px;
+        grid-template-columns: 140px 140px;
+        grid-template-rows: 225px 195px 255px 200px 175px;
+        grid-template-areas:"text text"
+                            "item1 item1"
+                            "item2 item2"
+                            "item3 item3"
+                            "item4 item4";
+    }
+
+    .item__texto{
+        padding: 10px;
+        grid-area: text;
+        font-size: 17px;
+        grid-row: 1 / 2;
+        text-align: left;
+    }
+
+    .item1{
+        grid-column: 1 / 3;
+        background-size: 250px;
+    }
+
+    .item2{
+        grid-column: 1 / 3;
+        background-size: 250px;
+    }
+
+    .item3{
+        grid-column: 1 / 3;
+        background-size: 250px;
+    }
+
+    .item4{
+        background-size: 250px;
+        grid-row: 5 / 6;
+    }
+    
+/* sobre-nosostros */
+
+    .img__sn{
+        width: 300px;
+    }
+
+    .article__conocenos{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1em;
+    }
+
+    /* ubicanos */
+
+    .mapa{
+        border-radius: 5px;
+        background-color: rgb(14, 185, 14);
+        width: 300px;
+        height: 300px;
+        margin: 8px;
+        padding: 5px;
+    }
+
+    /* productos */
+
+    .video__productos{
+        width: 300px;
+        margin: 10px;
+    }
+
+    /* footer */
+
+    footer{
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    /* bootstrap */
+
+    .carrusel{
+        width: 75%;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 1200px){
+
+    /* header/nav */
+
+    header{
+        position: static;
+        padding: 0px;
+    }
+
+    .header__icono{
+        width: 50px;
+        padding: 5px;
+    }
+
+    .header__item{
+        padding: 3px;
+    }
+
+    .header__item a{
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    nav{
+        justify-content: space-around;
+    }
+
+    .header__lista{
+        display: flex;
+        padding: 0px;
+        margin: 10px;
+    }
+
+     /* --Grid en index-- */
+    
+    .grid__container{
+        width: fit-content;
+        margin: 15px;
+        padding: 5px;
+        grid-template-columns: 180px 180px 180px;
+        grid-template-rows: 130px 195px 250px;
+        grid-template-areas:"text text text"
+                            "item1 item1 item2"
+                            "item4 item4 item3";
+    }
+
+        
+    .item__texto{
+        padding: 10px;
+        grid-area: text;
+        font-size: 17px;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        text-align: left;
+    }
+
+    .item1{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        background-size: 250px;
+    }
+
+    .item2{
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        background-size: 187px;
+    }
+
+    .item3{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        background-size: 200px;
+    }
+
+    .item4{
+        background-size: 400px;
+        grid-row: 3 / 4;
+        grid-column: 2 /4 ;
+    }
+    
+
+    /* sobre-nosostros */
+
+    .img__sn{
+        width: 500px;
+    }
+
+    .article__conocenos{
+        display: flex;
+        flex-direction: column;
+        font-size: 2.1em;
+        margin: 10px;
+    }
+
+        /* productos */
+
+        .video__productos{
+            height: 400px;  
+            width: 400px;;         
+            margin: 10px;
+        }
+
+    /* Ubicanos/encuentranos */
+
+    .mapa{
+        width: 560px;
+    }
+
+    /* footer */
+
+    footer{
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    /* bootstrap */
+
+    .carrusel{
+        width: 75%;
+    }
+
+}

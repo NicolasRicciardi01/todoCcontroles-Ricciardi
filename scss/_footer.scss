@@ -1,0 +1,29 @@
+/* Footer */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    background-color: rgb(14, 185, 14);
+    padding: 10px;
+
+    .footer{
+
+        &__lista{
+            display: flex;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        &__item{
+            display: flex;
+            display: inline;
+        }
+
+        &__img{
+            margin: 2px;
+            width: 40px;
+        }
+    }
+}
