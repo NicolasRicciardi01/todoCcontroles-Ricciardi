@@ -315,7 +315,7 @@ footer {
     align-items: center; }
   /* bootstrap */
   .carrusel {
-    width: 75%; } }
+    width: auto; } }
 
 /* MAIN */
 section {
@@ -389,9 +389,8 @@ body {
 
 /* carrusel */
 .carrusel {
-  width: 30%; }
-
-.carrusel img {
-  width: auto;
-  height: 300px;
-  max-height: 300px; }
+  width: 50%; }
+  .carrusel img {
+    width: auto;
+    height: 300px;
+    max-height: 300px; }

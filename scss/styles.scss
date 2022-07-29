@@ -102,11 +102,11 @@ body{
 /* carrusel */
 
 .carrusel{
-    width: 30%;
+    width: 50%;
+    img {
+        width: auto;
+        height: 300px;
+        max-height: 300px;
+    }
 }
 
-.carrusel img {
-    width: auto;
-    height: 300px;
-    max-height: 300px;
-}
