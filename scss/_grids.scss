@@ -1,3 +1,33 @@
+/* --Grid en index-- */
+.grid{
+    &__container{
+        margin: 10px;
+        border-radius: 10px;
+        padding: 5px;
+        display: grid;
+        background-color: rgb(14, 185, 14);
+        grid-template-columns: 300px 200px 200px;
+        grid-template-rows: 220px 420px 340px;
+        grid-template-areas:"text item1 item2"
+                            "text item3 item3"
+                            "text item4 item4" ;
+            & div{
+                margin: 2px;
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+                border: 2px solid rgb(14, 185, 14);
+
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: 0.20s;
+                    }
+            }
+    }
+
+
+    
+}
 /* Items grid index */
 
 .item{
@@ -47,7 +77,31 @@
     }
 }
 
+/* --Grid en contactos-- */
+
+.grid__container--contactos{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    background-color: rgb(14, 185, 14);
+    grid-template-columns: 400px 110px;
+    grid-template-rows: repeat(4, 110px);
+    grid-template-areas: "wsptxt img1"
+                         "fbtxt img2"
+                         "igtxt img3"
+                         "ldtxt img4";
+
+
+    & div{
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(14, 185, 14);
+    }
+}
 /* Items grid contactos */
+
 /* imgs */
 
 .img{
