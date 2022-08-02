@@ -9,6 +9,10 @@
 @import "mediaqueries";
 @import "variables";
 
+header{
+    margin-bottom: 50px;
+}
+
 /* MAIN */
 
 section{
@@ -58,10 +62,12 @@ body{
     display: inline;
 }
 
+/* conocenos */
+
 .article__conocenos{
     display: flex;
     justify-content: center;
-    font-size: 2.1em;
+    font-size: 1.8em;
     margin: 10px;
 }
 
@@ -82,7 +88,15 @@ body{
 
 /* ubicanos/encuentranos */
 
+.section__encuentranos{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 .mapa{
+    height: 80%;
+    width: 1500px;
     border-radius: 5px;
     background-color: $colorpag;
     margin: 8px;
@@ -102,11 +116,13 @@ body{
 /* carrusel */
 
 .carrusel{
+    height: 100vh;
     width: 50%;
+    display: flex;
+    align-items: center;
     img {
-        width: auto;
-        height: 300px;
-        max-height: 300px;
+        width: 750px;
+        padding: 50px;
     }
 }
 
