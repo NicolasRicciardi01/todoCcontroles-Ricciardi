@@ -23,6 +23,29 @@ footer {
     margin: 2px;
     width: 40px; }
 
+/* Index */
+.item__1, .item__2, .item__3, .item__4 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+/* Contactos */
+.img__1, .img__2, .img__3, .img__4 {
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.txt__1, .txt__2, .txt__3, .txt__4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace; }
+
+.txt__1:hover, .txt__2:hover, .txt__3:hover, .txt__4:hover {
+  transform: scale(1.1);
+  transition: 0.20s; }
+
 /* --Grid en index-- */
 .grid__container {
   margin: 10px;
@@ -54,33 +77,21 @@ footer {
 .item__1 {
   grid-area: item1;
   background-image: url(../resources/hotas1.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   grid-column: 2 / 3; }
 
 .item__2 {
   grid-area: item2;
   background-image: url(../resources/hotas2.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   grid-column: 3 / 4; }
 
 .item__3 {
   grid-area: item3;
   background-image: url(../resources/hotas3.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   grid-column: 2 / 4; }
 
 .item__4 {
   grid-area: item4;
   background-image: url(../resources/hotas4.jpg);
-  background-repeat: no-repeat;
-  background-size: 505px auto;
-  background-position: center;
   grid-column: 1 / 4; }
 
 /* --Grid en contactos-- */
@@ -103,76 +114,32 @@ footer {
 /* imgs */
 .img__1 {
   grid-area: img1;
-  background-image: url(../resources/whatsapp.png);
-  background-size: 100px;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-image: url(../resources/whatsapp.png); }
 
 .img__2 {
   grid-area: img2;
-  background-image: url(../resources/facebook.png);
-  background-size: 100px;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-image: url(../resources/facebook.png); }
 
 .img__3 {
   grid-area: img3;
-  background-image: url(../resources/instagram.png);
-  background-size: 100px;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-image: url(../resources/instagram.png); }
 
 .img__4 {
   grid-area: img4;
-  background-image: url(../resources/linkedin.png);
-  background-size: 100px;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-image: url(../resources/linkedin.png); }
 
 /* Txts */
 .txt__1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: wsptxt;
-  font-size: 40px;
-  font-family: 'Courier New', Courier, monospace; }
-  .txt__1:hover {
-    transform: scale(1.4);
-    transition: 0.20s; }
+  grid-area: wsptxt; }
 
 .txt__2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: fbtxt;
-  font-size: 37px;
-  font-family: 'Courier New', Courier, monospace; }
-  .txt__2:hover {
-    transform: scale(1.4);
-    transition: 0.20s; }
+  grid-area: fbtxt; }
 
 .txt__3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: igtxt;
-  font-size: 40px;
-  font-family: 'Courier New', Courier, monospace; }
-  .txt__3:hover {
-    transform: scale(1.4);
-    transition: 0.20s; }
+  grid-area: igtxt; }
 
 .txt__4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: ldtxt;
-  font-size: 40px;
-  font-family: 'Courier New', Courier, monospace; }
-  .txt__4:hover {
-    transform: scale(1.4);
-    transition: 0.20s; }
+  grid-area: ldtxt; }
 
 /* medida celular */
 @media (min-width: 320px) and (max-width: 575px) {

@@ -1,3 +1,5 @@
+@import "extend";
+
 /* --Grid en index-- */
 .grid{
     &__container{
@@ -41,38 +43,30 @@
     }
 
     &__1{
+        @extend %gridsimg;
         grid-area: item1;
         background-image: url(../resources/hotas1.jpg) ;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         grid-column: 2 / 3;
     }
 
     &__2{
+        @extend %gridsimg;
         grid-area: item2;
         background-image: url(../resources/hotas2.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         grid-column: 3 / 4;
     }
 
     &__3{
+        @extend %gridsimg;
         grid-area: item3;
         background-image: url(../resources/hotas3.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         grid-column: 2 / 4;
     }
 
     &__4{
+        @extend %gridsimg;
         grid-area: item4;
         background-image: url(../resources/hotas4.jpg);
-        background-repeat: no-repeat;
-        background-size: 505px auto;
-        background-position: center;
         grid-column: 1 / 4;
     }
 }
@@ -109,33 +103,25 @@
     &__1{
         grid-area: img1;
         background-image: url(../resources/whatsapp.png) ;
-        background-size: 100px;
-        background-position: center;
-        background-repeat: no-repeat;
+        @extend %grids__img--contactos;
     }
 
     &__2{
         grid-area: img2;
         background-image: url(../resources/facebook.png) ;
-        background-size: 100px;
-        background-position: center;
-        background-repeat: no-repeat;
+        @extend %grids__img--contactos;
     }
 
     &__3{
         grid-area: img3;
         background-image: url(../resources/instagram.png) ;
-        background-size: 100px;
-        background-position: center;
-        background-repeat: no-repeat;
+        @extend %grids__img--contactos;
     }
 
     &__4{
         grid-area: img4;
         background-image: url(../resources/linkedin.png) ;
-        background-size: 100px;
-        background-position: center;
-        background-repeat: no-repeat;
+        @extend %grids__img--contactos;
     }
 }
 
@@ -144,59 +130,39 @@
 .txt{
 
     &__1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: wsptxt;
-        font-size: 40px;
-        font-family: 'Courier New', Courier, monospace;
+        @extend %grids__txt--contactos;
     
         &:hover{
-            transform: scale(1.4);
-            transition: 0.20s;
+            @extend %hover__txt;
         } 
     }  
 
     &__2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: fbtxt;
-        font-size: 37px;
-        font-family: 'Courier New', Courier, monospace;
+        @extend %grids__txt--contactos;
 
         &:hover{
-            transform: scale(1.4);
-            transition: 0.20s;
+            @extend %hover__txt;
         }
     }
 
     &__3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: igtxt;
-        font-size: 40px;
-        font-family: 'Courier New', Courier, monospace;
+        @extend %grids__txt--contactos;
     
         &:hover{
-            transform: scale(1.4);
-            transition: 0.20s;
+            @extend %hover__txt;
         }
     }
 
     &__4{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: ldtxt;
-        font-size: 40px;
-        font-family: 'Courier New', Courier, monospace;
+        @extend %grids__txt--contactos;
     
 
         &:hover{
-            transform: scale(1.4);
-            transition: 0.20s;
+            @extend %hover__txt;
         }
     }
 }

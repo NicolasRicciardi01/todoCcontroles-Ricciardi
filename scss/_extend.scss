@@ -1,0 +1,28 @@
+/* Index */
+
+%gridsimg{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Contactos */
+
+%grids__img--contactos{
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+%grids__txt--contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+%hover__txt{
+    transform: scale(1.1);
+    transition: 0.20s;
+}
