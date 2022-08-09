@@ -64,16 +64,25 @@ body{
 
 /* conocenos */
 
+.p__conocenos{
+    margin: 10px;
+    padding: 10px;
+}
+
 .article__conocenos{
     display: flex;
     justify-content: center;
     font-size: 1.8em;
     margin: 10px;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 .img{
 
     &__sn{
+        max-height: 500px;
+        max-width: 500px;
         border-radius: 5px;
         margin: 10px;
         padding: 10px;
@@ -112,17 +121,28 @@ body{
 .nav-item{
     font-size: 20px;
 }
+/* Productos */
+
+.main__productos{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 /* carrusel */
 
 .carrusel{
-    height: 100vh;
-    width: 50%;
+    margin: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $colorpag;
+    max-width: 700px;
+    width: auto;
     display: flex;
     align-items: center;
     img {
-        width: 750px;
-        padding: 50px;
+        width: auto;
+        padding: 0px;
     }
 }
 

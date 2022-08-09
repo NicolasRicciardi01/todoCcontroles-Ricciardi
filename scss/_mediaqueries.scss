@@ -6,6 +6,7 @@
 
     .grid__container--contactos{    
         margin: 12px;
+        margin-bottom: 131px;
         padding: 5px;
         grid-template-columns: 175px 110px;
         grid-template-rows: repeat(4, 110px);
@@ -109,9 +110,8 @@
 
     /* productos */
 
-    .video__productos{
-        width: 300px;
-        margin: 10px;
+    .main__productos{
+        height: 100vh;
     }
 
     /* footer */
@@ -124,15 +124,17 @@
     /* bootstrap */
 
     .carrusel{
-        width: 75%;
-    
-        & img {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        min-width: none;
+        img {
             width: auto;
-            height: 200px;
-            max-height: 200px;
+            max-width: 320px;
+            padding: 50px;
         }
     }
-
 }
 
 @media (min-width: 576px) and (max-width: 1200px){
@@ -200,10 +202,16 @@
 
         /* productos */
 
-        .video__productos{
-            height: 400px;  
-            width: 400px;;         
-            margin: 10px;
+        .carrusel{
+            display: flex;
+            align-items: center;
+            width: auto;
+            margin: 5px;
+            img {
+                width: auto;
+                max-width: 500px;
+                padding: 50px;
+            }
         }
 
     /* Ubicanos/encuentranos */
@@ -223,11 +231,4 @@
         justify-content:space-around;
         align-items: center;
     }
-
-    /* bootstrap */
-
-    .carrusel{
-        width: auto;
-    }
-
 }
