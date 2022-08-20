@@ -88,7 +88,6 @@ body{
         max-height: 500px;
         max-width: 500px;
         border-radius: 5px;
-        margin: 10px;
         padding: 10px;
         background-color: $colorpag;
 
@@ -127,46 +126,40 @@ body{
 }
 /* Productos */
 
-.card{
-    height: 518px;
-    width: 350px;
-    margin: 100px;
-}
 
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+
+.card{
+    background-color: $colorpag;
+    height: 470px;
+    width: 312px;
+    margin: 100px;
+    padding: 5px;
+
+
+    &-text{
+        background-color: white;
+        font-size: 17px;
+    }
+
+    &-img-top{
+        border-radius: 5px;
+    }
+
+    &-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &-deck{
+        padding-bottom: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .main__productos{
     height: 100vh;
 }
-
-.card-deck{
-    margin: 150px;
-    margin-bottom: 100px;
-    padding: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-/* carrusel */
-
-.carrusel{
-    margin: 200px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: $colorpag;
-    max-width: 700px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    img {
-        width: auto;
-        padding: 0px;
-    }
-}
-

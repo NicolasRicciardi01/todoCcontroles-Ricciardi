@@ -208,8 +208,11 @@ footer {
     width: 300px; }
   .article__conocenos {
     display: flex;
-    flex-direction: column;
-    font-size: 1.1em; }
+    flex-direction: column; }
+  .p__conocenos {
+    text-decoration: solid;
+    text-align: center;
+    font-size: 0.8em; }
   /* ubicanos */
   .mapa {
     border-radius: 5px;
@@ -221,21 +224,15 @@ footer {
   /* productos */
   .main__productos {
     height: 100vh; }
+  .card {
+    width: 380px;
+    margin: 50px; }
+    .card-deck {
+      margin: 50px; }
   /* footer */
   footer {
     justify-content: space-around;
-    align-items: center; }
-  /* bootstrap */
-  .carrusel {
-    display: flex;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    min-width: none; }
-    .carrusel img {
-      width: auto;
-      max-width: 320px;
-      padding: 50px; } }
+    align-items: center; } }
 
 @media (min-width: 576px) and (max-width: 1200px) {
   /* Logo + texto navbar */
@@ -280,16 +277,6 @@ footer {
     flex-direction: column;
     font-size: 2.1em;
     margin: 10px; }
-  /* productos */
-  .carrusel {
-    display: flex;
-    align-items: center;
-    width: auto;
-    margin: 5px; }
-    .carrusel img {
-      width: auto;
-      max-width: 500px;
-      padding: 50px; }
   /* Ubicanos/encuentranos */
   .mapa {
     border-radius: 5px;
@@ -367,7 +354,6 @@ body {
   max-height: 500px;
   max-width: 500px;
   border-radius: 5px;
-  margin: 10px;
   padding: 10px;
   background-color: #0eb90e; }
   .img__sn:hover {
@@ -397,37 +383,26 @@ body {
 
 /* Productos */
 .card {
-  height: 518px;
-  width: 350px;
-  margin: 100px; }
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; }
+  background-color: #0eb90e;
+  height: 470px;
+  width: 312px;
+  margin: 100px;
+  padding: 5px; }
+  .card-text {
+    background-color: white;
+    font-size: 17px; }
+  .card-img-top {
+    border-radius: 5px; }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .card-deck {
+    padding-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
 
 .main__productos {
   height: 100vh; }
-
-.card-deck {
-  margin: 150px;
-  margin-bottom: 100px;
-  padding: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
-
-/* carrusel */
-.carrusel {
-  margin: 200px;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #0eb90e;
-  max-width: 700px;
-  width: auto;
-  display: flex;
-  align-items: center; }
-  .carrusel img {
-    width: auto;
-    padding: 0px; }

@@ -100,7 +100,11 @@
     .article__conocenos{
         display: flex;
         flex-direction: column;
-        font-size: 1.1em;
+    }
+    .p__conocenos{
+        text-decoration:solid;
+        text-align: center;
+        font-size: 0.8em;
     }
 
     /* ubicanos */
@@ -120,26 +124,25 @@
         height: 100vh;
     }
 
+    .card{
+        width: 380px;
+        margin: 50px;
+
+        &-deck{
+            margin: 50px;
+        }
+
+        &-body{
+
+        }
+
+    }
+
     /* footer */
 
     footer{
         justify-content:space-around;
         align-items: center;
-    }
-
-    /* bootstrap */
-
-    .carrusel{
-        display: flex;
-        align-items: center;
-        margin: 5px;
-        padding: 5px;
-        min-width: none;
-        img {
-            width: auto;
-            max-width: 320px;
-            padding: 50px;
-        }
     }
 }
 
@@ -212,20 +215,6 @@
         font-size: 2.1em;
         margin: 10px;
     }
-
-        /* productos */
-
-        .carrusel{
-            display: flex;
-            align-items: center;
-            width: auto;
-            margin: 5px;
-            img {
-                width: auto;
-                max-width: 500px;
-                padding: 50px;
-            }
-        }
 
     /* Ubicanos/encuentranos */
     
