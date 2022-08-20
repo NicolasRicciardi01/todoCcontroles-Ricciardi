@@ -16,8 +16,8 @@
         <!-- navegacion -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../resources/logo.png" alt="" width="15%" height="15%"> Todo Controles
+              <a class="navbar-brand mx-0" href="../index.html">
+                <img src="../resources/logo.png" alt="" width="10%" height="10%"> Todo Controles
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,31 +45,42 @@
     <main class="main__productos">
         <h1>PRODUCTOS</h1>
         <h2>Destacados</h2>
-        <div id="carouselExampleControls" class="carousel slide carrusel mx-auto h-auto " data-bs-ride="carousel">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../resources/hotas1.jpg" class="d-block w-auto h-50 rounded mx-auto img-fluid" alt="Responsive image">
+      <!-- deck de cartas -->
+        <div id='main-content' class="card-deck" style="margin: 0 0 0 0">
+          <!-- carta1 -->
+          <div class="card mx-1" >
+            <img class="card-img-top" src="../resources/hotas1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Gama alta</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div class="carousel-item">
-                <img src="../resources/hotas2.jpg" class="d-block w-auto h-50 rounded mx-auto img-fluid" alt="Responsive image">
+          </div>
+          <!-- carta2 -->
+          <div class="card mx-1" >
+            <img class="card-img-top" src="../resources/hotas2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Gama media</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div class="carousel-item">
-                <img src="../resources/hotas3.jpg" class="d-block w-auto h-50 rounded mx-auto img-fluid" alt="Responsive image">
+          </div>
+          <!-- carta3 -->
+          <div class="card mx-1">
+            <img class="card-img-top" src="../resources/hotas3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Gama baja</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div class="carousel-item">
-                <img src="../resources/hotas4.jpg" class="d-block w-auto h-50 rounded mx-auto img-fluid" alt="Responsive image">
+          </div>
+          <!-- carta4 -->
+          <div class="card mx-1">
+            <img class="card-img-top" src="../resources/hotas4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Joisticks para principiantes</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
-        <!-- pie de pag -->
+<!-- pie de pag -->
     <footer>
         <img src="../resources/logo.png" class="footer__img" alt="">
         <ul class="footer__lista">

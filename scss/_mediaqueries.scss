@@ -2,6 +2,12 @@
 /* medida celular */
 @media (min-width: 320px) and (max-width: 575px){
 
+        /* Logo + texto navbar */
+
+        .navbar-brand{
+            width: 240px;
+        }
+
     /*--Grid en contactos  */
 
     .grid__container--contactos{    
@@ -138,6 +144,13 @@
 }
 
 @media (min-width: 576px) and (max-width: 1200px){
+
+    /* Logo + texto navbar */
+
+    .navbar-brand{
+        width: 340px;
+    }
+
      /* --Grid en index-- */
     
     .grid__container{

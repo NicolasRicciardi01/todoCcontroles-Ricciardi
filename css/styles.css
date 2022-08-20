@@ -145,6 +145,9 @@ footer {
 
 /* medida celular */
 @media (min-width: 320px) and (max-width: 575px) {
+  /* Logo + texto navbar */
+  .navbar-brand {
+    width: 240px; }
   /*--Grid en contactos  */
   .grid__container--contactos {
     margin: 12px;
@@ -235,6 +238,9 @@ footer {
       padding: 50px; } }
 
 @media (min-width: 576px) and (max-width: 1200px) {
+  /* Logo + texto navbar */
+  .navbar-brand {
+    width: 340px; }
   /* --Grid en index-- */
   .grid__container {
     width: fit-content;
@@ -301,6 +307,9 @@ header {
   margin-bottom: 50px; }
 
 /* MAIN */
+.nav-brand {
+  margin: 0px; }
+
 section {
   display: flex;
   flex-direction: row;
@@ -387,10 +396,27 @@ body {
   font-size: 20px; }
 
 /* Productos */
-.main__productos {
-  height: 100vh;
+.card {
+  height: 518px;
+  width: 350px;
+  margin: 100px; }
+
+.card-body {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.main__productos {
+  height: 100vh; }
+
+.card-deck {
+  margin: 150px;
+  margin-bottom: 100px;
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
 /* carrusel */
 .carrusel {
